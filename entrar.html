@@ -1,0 +1,121 @@
+<html>
+
+<head>
+    <title>Opportunity</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#79b6a6">
+    <link rel="stylesheet" href="css/custom-mobile.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
+    <link rel="stylesheet" href="OwlCarousel/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="OwlCarousel/dist/assets/owl.theme.default.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="user">
+        <div class="container">
+            <div class="columns is-mobile is-centered">
+                <div class="column is-12 is-half">
+                    <div class="image-opportunity">
+                        <figure class="image is-128x128">
+                            <img src="images/opportunity-logo-verde.png" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="columns is-mobile is-centered">
+                <div class="column is-12 is-half">
+                    <div class="text-criar-conta">
+                        <div class="paragraph-login level-left">
+                            <a href="index.html">
+                                <i class="fas fa-sign-in-alt"></i>
+                                <span> Ir para Opportunity</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns is-mobile">
+                <div class="column is-12 is-half">
+                    <div class="text-criar-conta">
+                        <h2 class="title">
+                            Entrar
+                        </h2>
+                        <p class="paragraph-login">Ou
+                            <a href="criar_conta.html">criar sua conta</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-content">
+                <div class="columns is-mobile is-centered">
+                    <div class="column is-12 is-half">
+                        <form action="">
+                            <div class="field">
+                                <input class="input input-nome borda-cinza" type="text" placeholder="E-mail"
+                                    tabindex="1" />
+                            </div>
+                            <div class="field message-error disabled">
+                                <span style="color: #ff0000; font-size: 12px;">O campo é obrigatório</span>
+                            </div>
+                            <div class="field">
+                                <input class="input input-sobrenome borda-cinza" type="password" placeholder="Senha"
+                                    tabindex="2" />
+                            </div>
+                            <div class="field message-error-2 disabled">
+                                <span style="color: #ff0000; font-size: 12px;">O campo é obrigatório</span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <a class="button is-medium btn-proximo" style="width: 100%; cursor: auto;" tabindex="4"
+                            disabled>
+                            <span class="button-text-small">Entrar</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://kit.fontawesome.com/7dff0295f2.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="OwlCarousel/dist/owl.carousel.min.js"></script>
+    <script>
+        $(document).keyup(function () {
+
+            if ($('.input-nome').val().length > 0 && $('.input-sobrenome').val().length > 0) {
+                $(document).ready(function () {
+                    $('.btn-proximo').removeAttr('disabled')
+                })
+            } else {
+                $(document).ready(function () {
+                    $('.btn-proximo').attr('disabled', '')
+                    $('.btn-proximo').attr('readonly', '')
+                })
+            }
+
+            if ($('.input-nome').val().length <= 0) {
+                $('.message-error').removeClass('disabled')
+            } else {
+                $('.message-error').addClass('disabled')
+            }
+
+            if ($('.input-sobrenome').val().length <= 0) {
+                $('.message-error-2').removeClass('disabled')
+            } else {
+                $('.message-error-2').addClass('disabled')
+            }
+
+        })
+    </script>
+</body>
+
+</html>

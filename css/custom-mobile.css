@@ -1,0 +1,123 @@
+/* TABLETS */
+@media only screen and (max-width: 768px) {
+    section .tabs .tabbed-tab {
+        width: 100% !important;
+    }
+    section .tabbed-content {
+        width: 100% !important;
+    }
+    section .column {
+        position: relative;
+        top: 85px;
+    }
+    section .home-scroller {
+        display: none;
+    }
+    section.user {
+        width: 70% !important;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    section.user {
+        width: 60% !important;
+        margin: 0 auto;
+    }
+}
+
+/* SMARTHPHONES */
+@media only screen and (max-width: 480px) {
+    .banner-transparent {
+        height: 101%;
+    }
+    .navbar .navbar-item {
+        color: #19bd96 !important;
+    }
+    section .tabs .tabbed-tab {
+        width: 50% !important;
+    }
+    section .tabbed-content {
+        width: 100% !important;
+    }
+    section .home-scroller {
+        display: none;
+    }
+    section.is-fullheight {
+        min-height: 0 !important;
+    }
+    section.banner {
+        height: 340px !important;
+    }
+    .steps_content {
+        margin-top: 370px;
+    }
+    section.user {
+        width: 100% !important;
+        margin: 0 auto;
+    }
+    section .title-content-banner {
+        /* margin-bottom: 100px !important; */
+        margin-top: 280px;
+    }
+    section .column-title-content-banner {
+        text-align: center !important;
+    }
+
+    section .tabbed-box-column {
+        position: relative;
+        top: 98px;
+    }
+
+    section .number-rounded {
+        margin: 0 auto;
+    }
+
+    section .hero-body-content {
+        text-align: center;
+    }
+
+    section .image-content-2 {
+        display: none;
+    }
+
+    section .image-content-mobile {
+        display: block !important;
+    }
+
+    section.otimizacao-content-2 {
+        margin-top: 60px;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    /* CRIAR CONTA MOBILE */
+    .user {
+        width: 100% !important;
+        padding: 1.5rem;
+    }
+    .image-opportunity {
+        margin: 0 !important;
+    }
+    .text-criar-conta .title {
+        font-size: 22px;
+    }
+    .paragraph-login {
+        font-size: 15px;
+    }
+    .title-otimizacao {
+        position: absolute;
+    }
+
+    section.hero-background {
+        /* background-image: url('../images/peoples.jpg'); */
+        background-position: 620px; 
+    }
+
+    /* FAQ */
+    .owl-carousel .owl-stage-outer {
+        height: 625px !important;
+    }
+}
